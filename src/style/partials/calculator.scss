@@ -4,4 +4,92 @@
     border-radius: .5rem;
     background-color: $calc-bgc;
     box-shadow: $calc-shadow;
+
+    #result {
+        height: 12rem;
+
+        #history {
+            text-align: right;
+            height: 2rem;
+            margin: 0 2rem;
+            padding: 2rem 0 0 0;
+            font-size: 1.5rem;
+            color: $history;
+        }
+
+        #output {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            height: 6rem;
+            margin: 1rem 2rem;
+            font-size: 3rem;
+        }
+
+        p {
+            margin: 0;
+        }
+    }
+
+    #keyboard {
+        height: 40rem;
+        display: flex;
+        flex-wrap: wrap;
+
+        .operator,
+        .number,
+        .empty {
+            width: 5rem;
+            height: 5rem;
+            margin: 1.5rem;
+            border-radius: 50%;
+            border: none;
+            font-weight: 900;
+            font-size: 1.5rem;
+        }
+
+        .number,
+        .empty {
+            background-color: $calc-bgc;
+        }
+
+        .number,
+        .operator {
+            cursor: pointer;
+        }
+
+        .number:active,
+        .operator:active {
+            font-size: 1.2rem;
+        }
+
+        .number:focus,
+        .operator:focus {
+            outline: 0;
+        }
+
+        .operator {
+            font-size: 2rem;
+        }
+
+        #divide {
+            background-color: $divide;
+        }
+
+        #multiply {
+            background-color: $multiply;
+        }
+
+        #minus {
+            background-color: $minus;
+        }
+
+        #plus {
+            background-color: $plus;
+        }
+
+        #equals {
+            background-color: $equals;
+        }
+    }
 }

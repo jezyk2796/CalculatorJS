@@ -13,6 +13,7 @@ const showHistory = (result) => {
 
 const clear = () => {
     output.innerText = "";
+    historyValue.innerText = "";
 };
 
 const backspace = () => {
@@ -44,7 +45,3 @@ const insertValue = e => {
 
 numbers.forEach(number => number.addEventListener("click", insertValue));
 operators.forEach(operator => operator.addEventListener("click", insertValue));
-
-export {
-    insertValue
-};

@@ -1,4 +1,4 @@
-#Languages and Tools
+##Languages and Tools
 - HTML
 - SCSS
 - JavaScript (ES6)
